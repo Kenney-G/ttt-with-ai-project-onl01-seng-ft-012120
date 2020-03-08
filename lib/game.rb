@@ -1,7 +1,7 @@
 puts 'Greetings TTTer'
 
 class Game
-  attr_accessor :board, :player_1, :player_2
+  attr_accessor :board, :p_1, :p_2
   WIN_COMBINATIONS = [
     [0,1,2],
     [3,4,5],
@@ -13,10 +13,10 @@ class Game
     [6,4,2]
   ]
 
-  def initialize(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), board = Board.new)
+  def initialize(p_1 = Players::Human.new("X"), p_2 = Players::Human.new("O"), board = Board.new)
     @board = board
-    @player_1 = player_1
-    @player_2 = player_2
+    @p_1 = p_1
+    @p_2 = p_2
   end
 
   def over?
