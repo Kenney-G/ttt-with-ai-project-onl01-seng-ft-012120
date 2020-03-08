@@ -1,4 +1,3 @@
-#hello hello can I get a greeeeen liiiiiight?
 puts 'Greetings TTTer'
 
 class Game
